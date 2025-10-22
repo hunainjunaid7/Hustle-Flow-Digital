@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HustleFlow Digital | Your Partner in Growth</title>
+  <meta
+    name="description"
+    content="HustleFlow Digital - Elevating businesses through digital innovation. Complete software development, IT solutions, and BPO services across UAE, USA, Canada, and Australia."
+  />
+
+  <!-- ✅ Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-VoFZZI1aT7f1Wl0TiYvRz8W2fBfn4MphI/3kh8Qm0iHdQ4HTJzjH09FoB8EN7KJH+kt3ZcE0qICs79Q2rLg6bw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://kit.fontawesome.com/4423ba94c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">HustleFlow Digital</h1>
+                
+                <div class="nav-links desktop">
+                    <a onclick="scrollToSection('services')">Services</a>
+                    <a onclick="scrollToSection('experience')">Global Experience</a>
+                    <a onclick="scrollToSection('testimonials')">Testimonials</a>
+                    <a onclick="scrollToSection('about')">About Us</a>
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a onclick="scrollToSection('services')">Services</a>
+                <a onclick="scrollToSection('experience')">Global Experience</a>
+                <a onclick="scrollToSection('testimonials')">Testimonials</a>
+                <a onclick="scrollToSection('about')">About Us</a>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="video-background" id="videoBackground">
+    <!-- Player placeholder (YouTube API will replace this div) -->
+    <div id="yt-player"></div>
+  </div>
+
+  <!-- Slight overlay (adjust opacity if needed) -->
+  <div class="hero-overlay"></div>
+
+  <!-- Hero content -->
+  <div class="container hero-content" >
+    <h1>Your Partner In Ascension <span class="primary-text">Growth</span></h1>
+    <p style="font-size: 1.5rem; margin-bottom: 1rem;">Elevating Businesses through Digital Innovation</p>
+    <p style="font-size: 1.125rem; margin-bottom: 2rem;">From Digital Strategy to Global Execution</p>
+
+    <button class="btn btn-primary" style="font-size: 1.125rem; padding: 1.5rem 2rem;" onclick="scrollToSection('contact')">
+      Contact us →
+    </button>
+
+    <div class="trusted-by">
+      <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 1.5rem;">Trusted by Leading Companies</p>
+      <div class="trusted-logos">
+        <span style="font-size: 1.125rem; font-weight: 600;">Immersive Corp</span>
+        <span style="font-size: 1.125rem; font-weight: 600;">GlobalLink</span>
+        <span style="font-size: 1.125rem; font-weight: 600;">Apex Systems</span>
+        <span style="font-size: 1.125rem; font-weight: 600;">Excelman</span>
+        <span style="font-size: 1.125rem; font-weight: 600;">Prolific Solutions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Stats Section -->
+    <section style="padding: 0.25rem 0;  background: rgba(0, 217, 255, 0.05);">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">150+</div>
+                    <p class="text-muted">Projects Completed</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">50+</div>
+                    <p class="text-muted">Happy Clients</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">4</div>
+                    <p class="text-muted">Countries Served</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">24/7</div>
+                    <p class="text-muted">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="grid grid-2" style="margin-bottom: 3rem;">
+                <div class="card slide-in-left" style=" display: flex; justify-content: space-between; flex-direction: column;">
+                    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">Innovating Your <span style="color: hsl(188, 100%, 50%);">Digital Future</span></h2>
+                    <p class="text-muted" style="margin-bottom: 1.5rem;">Custom Software Development, Web & Mobile Apps, AI/ML Solutions</p>
+                    <div class="service-grid">
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-chart-line" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Digital Marketing & Meta Ads</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-bolt" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">AI Workflow & Automation</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-search" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">SEO Optimization</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-code" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Web Development & UI/UX</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="width: 100%;">Explore Services</button>
+                </div>
+
+                <div class="card slide-in-right">
+                    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">Streamlining Your <span style="color: hsl(188, 100%, 50%);">Operations for Growth</span></h2>
+                    <p class="text-muted" style="margin-bottom: 1.5rem;">Customer Support, Task Management, Best-in-Class IT Support</p>
+                    <div class="service-grid">
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-globe" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Global Expertise</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-cube" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Scalable Setup</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-leaf" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Customized Partnership</p>
+                        </div>
+                        <div class="service-item">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;"><i class="fas fa-headset" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p style="font-size: 0.75rem;">Immersive Growth Culture</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="width: 100%;">Explore Services</button>
+                </div>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-chart-line" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Digital Marketing & Meta Ads</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Strategic campaigns that drive results</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-bolt" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">AI Workflow & Automation</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Streamline operations with AI</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-search" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">SEO Optimization</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Boost your online visibility</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-code" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Web Development & UI/UX</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Beautiful, functional websites</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-mobile-alt" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Mobile App Development</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">iOS and Android solutions</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-palette" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Graphic Design</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Stunning visual content</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-headset" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">IT Support & Data Management</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Reliable technical solutions</p>
+                </div>
+                <div class="card fade-in">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="fas fa-pen-fancy" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Content Writing</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Engaging, technical content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background: rgba(0, 217, 255, 0.05); padding: 5rem 0;">
+                        <h2 class="section-title">More Services</h2>
+
+        <div class="container">
+            <div class="service-category-grid">
+                <!-- BPO Services -->
+                <div class="service-category-card fade-in">
+                    <h3 class="service-category-title">
+                        <i class="fas fa-globe" style="margin-right: 0.75rem;"></i>Global BPO & Customer Experience Solutions You Can Trust
+                    </h3>
+                    <ul class="service-list">
+                        <li>
+                            <i class="fas fa-bullseye"></i>
+                            <span><strong>Lead Generation</strong> - Data Fetching, Entry and Reporting Solutions</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-building"></i>
+                            <span><strong>BPO for All Types of Projects</strong> - Scalable solutions tailored to your needs</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Telesales (Inbound and Outbound)</strong> - Professional calling campaigns</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-headset"></i>
+                            <span><strong>Specialized Call Services</strong> - UAE and International Campaigns</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-comments"></i>
+                            <span><strong>Customer Support (Voice and Chat)</strong> - 24/7 availability</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span><strong>Billing and Account Management</strong> - Accurate and timely processing</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calculator"></i>
+                            <span><strong>Accounting and Tax Service</strong> - Corporate Tax Filing, VAT Registration, Auditing</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-tools"></i>
+                            <span><strong>Technical Support</strong> - Expert assistance when you need it</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-database"></i>
+                            <span><strong>Data Management Services</strong> - Secure and organized data handling</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IT & Software Services -->
+                <div class="service-category-card fade-in">
+                    <h3 class="service-category-title">
+                        <i class="fas fa-laptop-code" style="margin-right: 0.75rem;"></i>Innovative IT & Software Solutions That Drive Growth
+                    </h3>
+                    <ul class="service-list">
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <span><strong>Digital Marketing & Meta Ads</strong> - Performance-driven campaigns</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-bullseye"></i>
+                            <span><strong>Performance Marketing</strong> - Results-oriented strategies</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-search"></i>
+                            <span><strong>SEO Optimization</strong> - Boost your online visibility</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-pen-fancy"></i>
+                            <span><strong>Content Writing</strong> - Engaging and SEO-optimized content</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <span><strong>AI Workflow & Automation Solutions</strong> - Streamline your operations</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-code"></i>
+                            <span><strong>Web Development & Web Designing</strong> - Modern, responsive websites</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span><strong>UI/UX and Mobile App Development</strong> - User-centric design</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-palette"></i>
+                            <span><strong>Graphic Design</strong> - Logo, Banner, and Visual Design</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-tools"></i>
+                            <span><strong>IT Support</strong> - Reliable technical assistance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Global Experience</h2>
+            <p style="text-align: center; font-size: 1.25rem; color: hsl(0, 0%, 70%); margin-bottom: 3rem;">Delivering Excellence Across Continents</p>
+
+            <div class="card scale-in" style="margin-bottom: 3rem;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center;">
+                    <div style="font-size: 4rem;"><i class="fas fa-chart-line" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">Our Impact, Your Success</h3>
+                        <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Client: Nexus Tech</p>
+                        <p class="text-muted" style="margin-bottom: 1rem;">Developed complete data-processing dashboards. Created all client platforms.</p>
+                        <p style="color: hsl(188, 100%, 50%); font-size: 1.5rem; font-weight: bold;">Result: 85% Efficiency Gain</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card fade-in">
+                    <div class="country-flag">🇺🇦🇪</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">United Arab Emirates</h3>
+                    <ul class="project-list">
+                        <li><span class="bullet">•</span> DU Telecom Projects</li>
+                        <li><span class="bullet">•</span> Real Estate Campaigns</li>
+                        <li><span class="bullet">•</span> Food & Noon Delivery Services</li>
+                        <li><span class="bullet">•</span> CSR & Operations</li>
+                        <li><span class="bullet">•</span> High-Volume BPO Operations</li>
+                        <li><span class="bullet">•</span> Digital Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="country-flag">🇺🇸</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">United States</h3>
+                    <ul class="project-list">
+                        <li><span class="bullet">•</span> Website & Mobile App Development</li>
+                        <li><span class="bullet">•</span> BookAuthorWorld Project</li>
+                        <li><span class="bullet">•</span> CCTV Monitoring</li>
+                        <li><span class="bullet">•</span> Cold Calling & Lead Generation</li>
+                        <li><span class="bullet">•</span> 24/7 Customer Support</li>
+                        <li><span class="bullet">•</span> Data-Driven Digital Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="country-flag">🇨🇦</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Canada</h3>
+                    <ul class="project-list">
+                        <li><span class="bullet">•</span> Duct Cleaning Campaign</li>
+                        <li><span class="bullet">•</span> Local Business Promotions</li>
+                        <li><span class="bullet">•</span> Telemarketing for Service Companies</li>
+                        <li><span class="bullet">•</span> Customer Care & Chat Support</li>
+                        <li><span class="bullet">•</span> Data Management & Reporting</li>
+                        <li><span class="bullet">•</span> Digital Marketing & SEO</li>
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="country-flag">🇦🇺</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Australia</h3>
+                    <ul class="project-list">
+                        <li><span class="bullet">•</span> DB DirectBuy Campaign</li>
+                        <li><span class="bullet">•</span> Outbound Telesales</li>
+                        <li><span class="bullet">•</span> Digital Advertising & Meta Campaigns</li>
+                        <li><span class="bullet">•</span> BPO Operations</li>
+                        <li><span class="bullet">•</span> Billing & Order Processing</li>
+                        <li><span class="bullet">•</span> Customer Follow-ups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background: rgba(0, 217, 255, 0.05);">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p style="text-align: center; font-size: 1.125rem; color: hsl(0, 0%, 70%); margin-bottom: 3rem;">Real Results, Real Success Stories</p>
+
+            <div class="grid grid-2">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="text-muted" style="margin-bottom: 1.5rem; font-style: italic;">
+                        "HustleFlow Digital transformed our online presence completely. Their digital marketing strategies increased our leads by 200% in just 3 months. Highly professional team!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: hsl(188, 100%, 50%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">JD</div>
+                        <div>
+                            <p style="font-weight: 600;">John Davidson</p>
+                            <p class="text-muted" style="font-size: 0.875rem;">CEO, TechVenture USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="text-muted" style="margin-bottom: 1.5rem; font-style: italic;">
+                        "Working with HustleFlow has been a game-changer. Their BPO services are top-notch and their customer support team is incredibly responsive. Best decision we made this year."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: hsl(188, 100%, 50%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">SM</div>
+                        <div>
+                            <p style="font-weight: 600;">Sarah Mitchell</p>
+                            <p class="text-muted" style="font-size: 0.875rem;">Director, Apex Systems Canada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="text-muted" style="margin-bottom: 1.5rem; font-style: italic;">
+                        "The software development team exceeded our expectations. They delivered a complex AI-powered platform on time and within budget. Exceptional quality and communication."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: hsl(188, 100%, 50%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">RA</div>
+                        <div>
+                            <p style="font-weight: 600;">Rashid Al-Maktoum</p>
+                            <p class="text-muted" style="font-size: 0.875rem;">Managing Partner, Dubai Digital Hub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="text-muted" style="margin-bottom: 1.5rem; font-style: italic;">
+                        "HustleFlow's SEO expertise took our website from page 3 to top 3 positions for all our key terms. The ROI has been phenomenal. Can't recommend them enough!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: hsl(188, 100%, 50%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">MC</div>
+                        <div>
+                            <p style="font-weight: 600;">Michael Chen</p>
+                            <p class="text-muted" style="font-size: 0.875rem;">Founder, EcoSolutions Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+
+            <div class="grid grid-2">
+                <div class="card slide-in-left">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-bullseye" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Who We Are</h3>
+                    <p class="text-muted" style="margin-bottom: 1rem;">
+                        HustleFlow Digital is a forward-thinking organization operating as both a software house and a BPO call center. We provide complete digital, IT, and communication solutions under one roof, empowering businesses to scale with innovation and efficiency.
+                    </p>
+                    <p class="text-muted">
+                        Our expertise spans IT support, custom software development, digital marketing, and professional BPO services such as telesales, billing, customer support, and data management. We serve clients across the USA, Canada, Australia, and the UAE with reliable, scalable, and results-driven solutions.
+                    </p>
+                </div>
+
+                <div class="card slide-in-right">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-eye" style="color: hsl(188, 100%, 50%);"></i></div>
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Our Vision</h3>
+                    <p class="text-muted" style="margin-bottom: 1rem;">
+                        To redefine how businesses grow through technology, creativity, and communication — becoming a global benchmark for excellence in software development and BPO services.
+                    </p>
+                    <p class="text-muted" style="margin-bottom: 1.5rem;">
+                        We aim to deliver innovative, data-driven solutions that help brands achieve measurable success through performance, quality, and long-term growth.
+                    </p>
+                    <div style="padding: 1rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 0.5rem;">
+                        <p style="font-size: 0.875rem; font-weight: 600; color: hsl(188, 100%, 50%); margin-bottom: 0.5rem;">Our Expertise</p>
+                        <p style="font-size: 0.875rem; color: hsl(0, 0%, 70%);">
+                            With international experience across the UAE, USA, Canada, and Australia, our team integrates technology, creativity, and communication to produce measurable results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background: rgba(0, 217, 255, 0.05); padding: 5rem 0;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>What services does HustleFlow Digital offer?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer comprehensive digital services including custom software development, web & mobile apps, AI/ML solutions, digital marketing, SEO optimization, graphic design, and BPO services like customer support, telesales, and data management.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>Which countries do you serve?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We proudly serve clients in the United Arab Emirates, United States, Canada, and Australia with 24/7 support and local expertise in each region.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>How long does a typical project take?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex software solutions may take 2-6 months. We provide detailed timelines during consultation and maintain transparent communication throughout.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>Do you provide ongoing support after project completion?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer comprehensive post-launch support including maintenance, updates, technical assistance, and optimization services. Our 24/7 support ensures your business runs smoothly.
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span>What makes HustleFlow Digital different from competitors?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We combine software development expertise with BPO services under one roof, offer global experience with local presence, provide 24/7 support, and deliver data-driven results with transparent communication. Our proven track record of 150+ successful projects speaks for itself.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        
+        <div class="container">
+             
+            <div class="card fade-in" style="max-width: 700px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);">Get In Touch</h2>
+                    <p style="font-size: 1rem; color: hsl(0, 0%, 70%);">Let's discuss your project</p>
+                </div>
+
+
+                <!-- Contact Form -->
+                <form id="contactForm" onsubmit="handleSubmit(event)" style="margin-bottom: 2rem;">
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" id="name" class="form-input" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" id="email" class="form-input" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="+1 234 567 8900">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Service Interested In</label>
+                        <select id="service" class="form-input">
+                            <option value="">Select a service...</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Mobile App Development">Mobile App Development</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="SEO Optimization">SEO Optimization</option>
+                            <option value="AI/ML Solutions">AI/ML Solutions</option>
+                            <option value="BPO Services">BPO Services</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Message *</label>
+                        <textarea id="message" class="form-textarea" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+
+                    <div id="formStatus"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.75rem;" id="submitBtn">
+                        Send Message
+                    </button>
+                </form>
+
+                <div style="border-top: 1px solid rgba(0, 217, 255, 0.2); padding-top: 1.5rem;">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.25rem;">Or Reach Us Directly</h3>
+                    <div class="contact-grid">
+                        
+
+                        <div class="contact-card">
+                            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;"><i class="fa-brands fa-whatsapp" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p class="text-muted" style="font-size: 0.75rem; margin-bottom: 0.35rem;">Pakistan</p>
+                            <a href="https://wa.me/923463323818" style="font-size: 0.95rem;">+92 346 3323818</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;"><i class="fas fa-envelope" style="color: hsl(188, 100%, 50%);"></i></div>
+                            <p class="text-muted" style="font-size: 0.75rem; margin-bottom: 0.35rem;">Email</p>
+                            <a href="mailto:info.hustleflowdigital@gmail.com" style="font-size: 0.8rem; word-break: break-all;">info.hustleflowdigital@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: 0.8rem; color: hsl(0, 0%, 70%); flex-wrap: wrap;">
+                            <span><i class="fas fa-comments" style="color: hsl(188, 100%, 50%); margin-right: 0.35rem;"></i>24/7 Global Availability</span>
+                            <span>•</span>
+                            <span>Standard 48-hour response time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 0.5rem;">© 2025 HustleFlow Digital. All rights reserved.</p>
+            <p style="margin-bottom: 0.5rem;">Powered By <a href="https://techcami.com/">Tech Cami</a>.</p>
+            <p style="font-size: 0.875rem;">Your Partner in Growth | Elevating Businesses through Digital Innovation</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your public key
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); 
+        })();
+    </script>
+
+   
+</body>
+</html>
