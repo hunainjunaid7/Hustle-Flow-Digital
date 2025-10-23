@@ -9,7 +9,6 @@
     content="HustleFlow Digital - Elevating businesses through digital innovation. Complete software development, IT solutions, and BPO services across UAE, USA, Canada, and Australia."
   />
 
-  <!-- ✅ Font Awesome CDN -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -22,32 +21,45 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-content">
-                <h1 class="logo">HustleFlow Digital</h1>
-                
-                <div class="nav-links desktop">
-                    <a onclick="scrollToSection('services')">Services</a>
-                    <a onclick="scrollToSection('experience')">Global Experience</a>
-                    <a onclick="scrollToSection('testimonials')">Testimonials</a>
-                    <a onclick="scrollToSection('about')">About Us</a>
-                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
-                </div>
+   <!-- Navigation -->
+<nav>
+  <div class="container">
+    <div class="nav-content">
+      <!-- Logo Image -->
+      <div class="logo">
+        <img src="" alt="HustleFlow Digital Logo" class="logo-img">
+      </div>
 
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            </div>
+      <!-- Navigation Links -->
+      <div class="nav-links desktop">
+        <a onclick="scrollToSection('services')">Services</a>
+        <a onclick="scrollToSection('experience')">Global Experience</a>
+        <a onclick="scrollToSection('testimonials')">Testimonials</a>
+        <a onclick="scrollToSection('about')">About Us</a>
+        <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
 
-            <div class="mobile-nav" id="mobileNav">
-                <a onclick="scrollToSection('services')">Services</a>
-                <a onclick="scrollToSection('experience')">Global Experience</a>
-                <a onclick="scrollToSection('testimonials')">Testimonials</a>
-                <a onclick="scrollToSection('about')">About Us</a>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="scrollToSection('contact')">Contact</button>
-            </div>
+        <!-- Social Media Icons -->
+        <div class="nav-social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61582555016332" target="_blank"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://www.linkedin.com/in/hustleflow-digital-international-483805389/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/hust.leflowdigital/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-    </nav>
+      </div>
+
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a onclick="scrollToSection('services')">Services</a>
+      <a onclick="scrollToSection('experience')">Global Experience</a>
+      <a onclick="scrollToSection('testimonials')">Testimonials</a>
+      <a onclick="scrollToSection('about')">About Us</a>
+      <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="scrollToSection('contact')">Contact</button>
+    </div>
+  </div>
+</nav>
+
 
    <!-- Hero Section -->
 <section class="hero" id="hero">
@@ -624,14 +636,33 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p style="margin-bottom: 0.5rem;">© 2025 HustleFlow Digital. All rights reserved.</p>
-            <p style="margin-bottom: 0.5rem;">Powered By <a href="https://techcami.com/">Tech Cami</a>.</p>
-            <p style="font-size: 0.875rem;">Your Partner in Growth | Elevating Businesses through Digital Innovation</p>
-        </div>
-    </footer>
+ <footer>
+  <div class="container">
+    <p style="margin-bottom: 0.5rem;">© 2025 HustleFlow Digital. All rights reserved.</p>
+    <p style="margin-bottom: 0.5rem;">Powered By <a href="https://techcami.com/">Tech Cami</a>.</p>
+    <p style="font-size: 0.875rem;">Your Partner in Growth | Elevating Businesses through Digital Innovation</p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/hustleflow-digital-international-483805389/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61582555016332" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/hust.leflowdigital/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Add this once in your <head> (for icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">

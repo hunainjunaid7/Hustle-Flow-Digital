@@ -1,3 +1,36 @@
+/* Logo image */
+.logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* Social icons inside navbar */
+.nav-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-social-icons a {
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-social-icons a:hover {
+  color: #00d9ff;
+}
+
+/* Hide icons on small screens */
+@media (max-width: 767px) {
+  .nav-social-icons {
+    display: none;
+  }
+}
+
+
 .mobile-menu-btn {
       display: block;
       background: none;
@@ -354,12 +387,29 @@
             color: hsl(0, 0%, 70%);
         }
 
-        footer {
-            padding: 2rem 0;
-            border-top: 1px solid rgba(0, 217, 255, 0.2);
-            text-align: center;
-            color: hsl(0, 0%, 70%);
-        }
+     footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 217, 255, 0.2);
+  text-align: center;
+  color: hsl(0, 0%, 70%);
+}
+
+footer .social-icons {
+  margin-top: 1rem;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  color: hsl(0, 0%, 70%);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #00d9ff;
+}
+
 
         @keyframes fadeIn {
             from {
