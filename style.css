@@ -1,8 +1,8 @@
-/* Logo image */
 .logo-img {
-  height: 45px;
+  height: 260px;         /* increase logo size */
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* Social icons inside navbar */
@@ -187,11 +187,16 @@
             height: 80px;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+            .logo {
+        display: flex;
+        align-items: center;
+        
         }
+        @media (max-width: 767px) {
+  .logo-img {
+    height: 225px;
+  }
+}
 
         .nav-links {
             display: none;
@@ -738,4 +743,15 @@ footer .social-icons a:hover {
     color: hsl(188, 100%, 50%);
     margin-top: 0.25rem;
     flex-shrink: 0;
+}
+
+/* Disable animations on small screens for performance */
+@media (max-width: 767px) {
+
+  .slide-in-left,
+  .slide-in-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
